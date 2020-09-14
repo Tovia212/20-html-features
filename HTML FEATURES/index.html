@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/tovia212/image/upload/v1599740912/html_logo_wuikse.png">
+    <title>20 HTML FEATURES AND THEIR USES WITH HINTS</title>
+</head>
+<body>
+    <h1>20 HTML FEATURES AND THEIR USES WITH HINTS</h1>
+    
+    <dialog open>
+        <p>Greetings, one and all!</p>
+      </dialog><br>
+    </br>
+      
+    The box above was created using the <details><summary><strong>DIALOG</strong></summary>  It is represented in a starting and ending tag and both tags are mandatory.<br>The <code>form</code> elements can be integrated within a dialog by specifying them with the attribute <code>method="dialog"</code>. When such a form is submitted, the dialog is closed with its <code>returnValue</code> attribute set to the <code>value</code> of the form's submit button that was used.</details>tag. This tag requires an <details><summary><strong>OPEN</strong></summary> which "Indicates whether the details will be shown on page load" to be shown on the web page.</details>attribute
+      
+      <p>The above <code>form</code> text was achieved using the <details><summary><b>CODE</b></summary>Both the starting and ending tags are mandatory.To represent multiple lines of code, wrap the code element within a <details><summary>PRE</summary>This tag represents preformatted text which is to be presented exactly as written in the HTML file. Both starting and ending tags are mandatory. An alternate description for any images or diagrams can be created using preformatted text. 
+        <pre>---------------------------
+        \   ^__^ 
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||</pre></details> element. The <em>code</em> element by itself only represents a single phrase of code or line of code.</details>tag.</p>
+
+      <details><summary><b>DESCRIPTION TAGS</b></summary>
+        <ul>
+          <li>The <i><b>dl</b></i> element represents a description list.The element encloses a list of groups of terms (specified using the <i>dt</i> element) and descriptions (provided by <i>dd</i> elements)</li>
+          <li>The <i><b>dt</b></i> specifies a term in a description or definition list, and as such must be used inside a <i>dl</i> element. It is usually followed by a <i>dd</i> element; however, multiple <i>dt</i> elements in a row indicate several terms that are all defined by the immediate next <i>dd</i> element.</li>
+          <li>The <i><b>dd</b></i> provides the details about or the definition of the preceding term (<i>dt</i>) in a description list (<i>dl</i>).</li>
+        </ul>
+      </details> 
+      :It consists of the <i>dl</i>, <i>dl</i> and <i>dd</i> elements, which both the starting and ending tags of all are mandatory.
+
+
+       <p> EXAMPLE
+        <dl>
+          <dt>Beast of Bodmin</dt> ⬆dt
+          <dd>A large feline inhabiting Bodmin Moor.</dd> dd⬆
+
+          <dt>Morgawr</dt> ⬆dt
+          <dd>A sea serpent.</dd> dd⬆
+
+          <dt>Owlman</dt>
+          <dd>A giant owl-like creature.</dd>
+        </dl>
+      </p>
+
+      
+      
+      <details><summary><b>FIELDSET</b></summary> The <i>fieldset</i> element provides a grouping for a part of an HTML form, with a nested <details><summary><b>LEGEND</b></summary>The <i>legend</i> represents a caption for the content of its parent <i>fieldset</i>.</details> element providing a caption for the <i>fieldset</i> It takes few attributes, the most notable of which are form, which can contain the id of a <i>form</i> on the same page, allowing you to make the <i>fieldset</i> part of that <i>form</i> even if it is not nested inside it, and disabled, which allows you to disable the <i>fieldset</i> and all its contents in one go.</details>
+      <p>EXAMPLE OF THE FIELDSET WITH ITS CHILD <I>LEGEND</I></p>
+      <form action="#">
+        <fieldset>
+          <legend>Simple fieldset</legend>
+          <input type="radio" id="radio">
+          <label for="radio">Spirit of radio</label>
+        </fieldset>
+      </form>
+        <br/>
+
+      <details><summary><b>FIGURE</b></summary>The <i>figure</i> represents self-contained content, frequently with a caption (<details><summary><b>FIGCAPTION</b></summary>The <i>figcaption</i> represents a caption or legend for the rest of the contents its parent <i>figure</i> element, if any.</details>), and is typically referenced as a single unit. Usually a <i>figure</i> is an image, illustration, diagram, code snippet, etc., that is referenced in the main flow of a document, but that can be moved to another part of the document or to an appendix without affecting the main flow.</details><p>EXAMPLE:</p>
+      <figure>
+        <img src="https://res.cloudinary.com/tovia212/image/upload/v1599111022/shahbaz-shaikh-iJd9SeygLds-unsplash_v1u0hn.jpg"
+            alt="BIRD" height="400" width="300">
+        <figcaption>Photography</figcaption>
+      </figure>
+
+      <details><summary><b>HTML Keyboard Input element (<i>kbd</i>)</b></summary>It represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device.<br>
+        Other elements can be used in tandem with <i>kbd</i> to represent more specific scenarios:
+
+          Nesting a <i>kbd</i> element within another <i>kbd</i> element represents an actual key or other unit of input as a portion of a larger input. 
+          Nesting a <details><summary><b>SAMP</b></summary>The HTML Sample Element (<i>samp</i>)This is used to enclose inline text which represents sample (or quoted) output from a computer program. EXAMPLE;<br><samp>Keyboard not found <br>Press F1 to continue</samp></details> element inside a <i>kbd</i> element, on the other hand, represents input which is based on text presented by the system, such as the names of menus and menu items, or the names of buttons displayed on the screen </details>
+      <p>You can also create a new document by pressing
+        <kbd><kbd class="key">Ctrl</kbd>+<kbd class="key">N</kbd></kbd>.</p>
+
+      <details><summary><b>MARK</b></summary>The HTML Mark Text element (<i>mark</i>) represents text which is marked or highlighted for reference or notation purposes, due to the marked passage's relevance or importance in the enclosing context.Both starting and ending tags are mandatory</details>
+      <p>Several species of <mark>salamander</mark> inhabit the temperate rainforest of the Pacific Northwest.</p>
+
+
+      <details><summary><b>METER</b></summary>The <i>meter</i> represents either a scalar value within a known range or a fractional value.
+
+      </details>
+      <p>Heat the oven to <meter min="200" max="500"
+        value="350">350 degrees</meter>.</p>
+      
+
+        <details><summary><b>HTML Unarticulated Annotation element (<i>u</i>)</b></summary>It represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a simple solid underline, but may be altered using CSS.</details>
+
+      <p>You could use this element to highlight <u>speling</u> mistakes, so the writer can <u>corect</u> them.</p>
+
+      <details><summary><b>DEL</b></summary>The <i>del</i> represents a range of text that has been deleted from a document. This can be used when rendering "track changes" or source code diff information, for example. The <b>INS</b> element can be used for the opposite purpose: to indicate text that has been added to the document.
+
+      </details>
+      <p>“You're late!”</p>
+        <del>
+            <p>“I apologize for the delay.”</p>
+        </del>
+        <ins cite="../howtobeawizard.html" datetime="2018-05">
+            <p>“A wizard is never late …”</p>
+        </ins>
+
+        <details><summary><b>INPUT TYPE="COLOR"</b></summary>
+        
+        The <i>input</i> elements of type "color" provide a user interface element that lets a user specify a color, either by using a visual color picker interface or by entering the color into a text field in "#rrggbb" hexadecimal format. Only simple colors (with no alpha channel) are allowed. The values are compatible with CSS.<br> Setting the value to anything that isn't a valid, fully-opaque, RGB color in hexadecimal notation will result in the value being set to "#000000". In particular, you can't use CSS's standardized color names, or any CSS function syntax, to set the value. This makes sense when you keep in mind that HTML and CSS are separate languages and specifications. In addition, colors with an alpha channel are not supported; specifying a color in 9-character hexadecimal notation (e.g. #009900aa) will also result in the color being set to "#000000".</details>
+        <div>
+            <input type="color" id="head" name="head"
+                  value="#e66465">
+            <label for="head">Head</label>
+        </div>
+
+
+
+
+</body>
+</html>
